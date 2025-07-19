@@ -137,7 +137,7 @@ export default function CodeEditor() {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
               <FileCode className="h-6 w-6" />
-              <CardTitle>Hack It On Online Compiler</CardTitle>
+              <CardTitle>Autobit Online Compiler</CardTitle>
               <Badge variant="secondary">Beta</Badge>
             </div>
             <div className="flex items-center gap-2">

@@ -22,7 +22,7 @@ export default async function ProjectsPage() {
               </TabsTrigger>
               <TabsTrigger value="hackiton" className="flex items-center gap-2">
                 <Trophy className="w-4 h-4" />
-                Hack It On
+                Autobit
               </TabsTrigger>
             </TabsList>
           </div>
