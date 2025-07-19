@@ -18,36 +18,36 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Hack It On",
+  title: "AutoBit",
   description:
-    "Hack It On - Empowering the next generation of developers through community-driven learning.",
+    "AutoBit - Empowering the next generation of developers through community-driven learning.",
   keywords: [
-    "hack it on",
+    "AutoBit",
     "bit",
     "bengal institute of technology",
     "college",
     "software",
     "programming",
   ],
-  authors: [{ name: "Hack It On Team" }],
-  creator: "Hack It On",
-  publisher: "Hack It On",
-  metadataBase: new URL("https://hackiton.vercel.app/"), // Replace with your actual domain
+  authors: [{ name: "AutoBit Team" }],
+  creator: "AutoBit",
+  publisher: "AutoBit",
+  metadataBase: new URL("https://autobit-web.vercel.app/"), // Replace with your actual domain
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Hack It On",
+    title: "AutoBit",
     description:
-      "Hack It On - Empowering the next generation of developers through community-driven learning..",
-    url: "https://hackiton.vercel.app/", // Replace with your actual domain
-    siteName: "Hack It On",
+      "AutoBit - Empowering the next generation of developers through community-driven learning..",
+    url: "https://autobit-web.vercel.app/", // Replace with your actual domain
+    siteName: "AutoBit",
     images: [
       {
-        url: "https://hackiton.vercel.app/logo.png", // Add your OpenGraph image
+        url: "https://autobit-web.vercel.app/logo.png", // Add your OpenGraph image
         width: 1200,
         height: 630,
-        alt: "Hack It On - Empowering the next generation of developers through community-driven learning.",
+        alt: "AutoBit - Empowering the next generation of developers through community-driven learning.",
       },
     ],
     locale: "en_US",
@@ -55,10 +55,10 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Hack It On",
+    title: "AutoBit",
     description:
-      "Hack It On - Empowering the next generation of developers through community-driven learning.",
-    images: ["https://hackiton.vercel.app/logo.png"], // Add your Twitter card image
+      "AutoBit - Empowering the next generation of developers through community-driven learning.",
+    images: ["https://autobit-web.vercel.app/logo.png"], // Add your Twitter card image
     creator: "@Hack_It_On", // Replace with your actual Twitter handle
   },
   robots: {
