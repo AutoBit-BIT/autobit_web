@@ -62,6 +62,8 @@ export default function MandatoryOAuthPopup({ user, onComplete }) {
 
         if (response.ok) {
           setGithubConnected(true);
+          // Check if all accounts are connected after successful GitHub connection
+          checkIfAllConnected();
         } else {
           const data = await response.json();
           setError(data.message || "Failed to update GitHub username");
@@ -79,7 +81,7 @@ export default function MandatoryOAuthPopup({ user, onComplete }) {
 
   const checkIfAllConnected = () => {
     if (githubConnected || !!user?.githubUsername) {
-      console.log("Both accounts connected, showing logout prompt");
+      console.log("GitHub account connected, showing logout prompt");
       setOpen(false);
       setShowLogoutPrompt(true);
     }
@@ -165,7 +167,7 @@ export default function MandatoryOAuthPopup({ user, onComplete }) {
             <Alert>
               <CheckCircle2 className="h-4 w-4" />
               <AlertDescription>
-                All accounts successfully connected!
+                GitHub account successfully connected!
               </AlertDescription>
             </Alert>
           </div>
