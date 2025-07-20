@@ -142,9 +142,9 @@ export default function MandatoryOAuthPopup({ user, onComplete }) {
             </div>
           </div>
 
-          <div className="flex justify-center text-sm text-gray-500">
+          {/* <div className="flex justify-center text-sm text-gray-500">
             <p>Both connections are required to continue using the platform.</p>
-          </div>
+          </div> */}
         </DialogContent>
       </Dialog>
 
