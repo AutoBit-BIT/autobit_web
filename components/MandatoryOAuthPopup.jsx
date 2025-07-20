@@ -62,8 +62,10 @@ export default function MandatoryOAuthPopup({ user, onComplete }) {
 
         if (response.ok) {
           setGithubConnected(true);
-          // Check if all accounts are connected after successful GitHub connection
-          checkIfAllConnected();
+          // Directly show logout prompt after successful connection
+          console.log("GitHub account connected, showing logout prompt");
+          setOpen(false);
+          setShowLogoutPrompt(true);
         } else {
           const data = await response.json();
           setError(data.message || "Failed to update GitHub username");
@@ -76,14 +78,6 @@ export default function MandatoryOAuthPopup({ user, onComplete }) {
       setError("An error occurred. Please try again.");
     } finally {
       setLoading(false);
-    }
-  };
-
-  const checkIfAllConnected = () => {
-    if (githubConnected || !!user?.githubUsername) {
-      console.log("GitHub account connected, showing logout prompt");
-      setOpen(false);
-      setShowLogoutPrompt(true);
     }
   };
 
